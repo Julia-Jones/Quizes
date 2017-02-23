@@ -21,34 +21,34 @@ public class Quiz1 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        
+
         //creating city and robot
         City kw = new City();
-        Robot bob = new Robot(kw,4,0,Direction.EAST);
-        
+        Robot bob = new Robot(kw, 4, 0, Direction.EAST);
+
         //building the walls
-        new Wall(kw,4,2,Direction.WEST);
-        new Wall(kw,4,2,Direction.NORTH);
-        new Wall(kw,3,3,Direction.WEST);
-        new Wall(kw,3,3,Direction.NORTH);
-        new Wall(kw,2,4,Direction.WEST);
-        new Wall(kw,2,4,Direction.NORTH);
-        new Wall(kw,2,5,Direction.NORTH);
-        new Wall(kw,2,5,Direction.EAST);
-        new Wall(kw,2,5,Direction.NORTH);
-        new Wall(kw,3,6,Direction.EAST);
-        new Wall(kw,3,6,Direction.NORTH);
-        new Wall(kw,4,7,Direction.EAST);
-        new Wall(kw,4,7,Direction.NORTH);
-        
-        
+        new Wall(kw, 4, 2, Direction.WEST);
+        new Wall(kw, 4, 2, Direction.NORTH);
+        new Wall(kw, 3, 3, Direction.WEST);
+        new Wall(kw, 3, 3, Direction.NORTH);
+        new Wall(kw, 2, 4, Direction.WEST);
+        new Wall(kw, 2, 4, Direction.NORTH);
+        new Wall(kw, 2, 5, Direction.NORTH);
+        new Wall(kw, 2, 5, Direction.EAST);
+        new Wall(kw, 2, 5, Direction.NORTH);
+        new Wall(kw, 3, 6, Direction.EAST);
+        new Wall(kw, 3, 6, Direction.NORTH);
+        new Wall(kw, 4, 7, Direction.EAST);
+        new Wall(kw, 4, 7, Direction.NORTH);
+
+
         //building the things
-        new Thing(kw,4,1);
-        new Thing(kw,3,2);
-        new Thing(kw,2,3);
-        new Thing(kw,1,4);
-        
-        
+        new Thing(kw, 4, 1);
+        new Thing(kw, 3, 2);
+        new Thing(kw, 2, 3);
+        new Thing(kw, 1, 4);
+
+
         //moving bob up the picking up the lights
         bob.move();
         bob.pickThing();
@@ -98,21 +98,7 @@ public class Quiz1 {
         bob.putThing();
         bob.turnLeft();
         bob.move();
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+
+
     }
 }
